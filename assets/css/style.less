@@ -11,10 +11,15 @@ header {
   padding: 20px 0;
 }
 
-.brand hgroup {
-  margin-left: 20px;
-  margin-top: 50px;
+.brand {
+  display: block;
+  width: 400px;
+  hgroup {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
 }
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -27,19 +32,27 @@ header {
           box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 
-@media (min-width: 1200px) {
+nav#selectList select {
+  display: none;
 }
 
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .search-form {
-    display: none
-  }
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 1em;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .search-form {
-    display: none
-  }
+/*desktop styles*/
+@media only screen and (min-width:769px) {
   h2 {
     font-size: 25px;
   }
@@ -48,7 +61,14 @@ header {
   }    
 }
 
-@media (max-width: 767px) {
+/*tablet styles*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+  .brand {
+    width: 100%;
+  }
+  #navbar-search-form, #topNav {
+    display: none;
+  }
   .row-fluid [class*="span3"] {
     width: 50%;
     float: left;
@@ -58,18 +78,30 @@ header {
   }  
 }
 
-@media (max-width: 480px) {
-  .brand hgroup {
-    margin: 0 0 0 10px;
+/* mobile styles */
+@media only screen and (max-width:480px) {
+  .brand {
+    width: 100%;
+    img, h2 {
+      display: none;
+    }
+    hgroup {
+      margin-top: 0; 
+    }
   }
-  .brand img, .brand h2 {
-    display: none;
-  }
+  
   .row-fluid [class*="span3"] {
     width: 100%;
     float: none;
   }
   .carousel-caption p {
     font-size: 14px;
-  }  
+  }
+
+  nav#selectList ul {
+    display: none;
+  }
+  nav#selectList select { 
+    display: inline-block; 
+  }
 }
