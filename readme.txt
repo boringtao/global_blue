@@ -28,7 +28,8 @@ Instruction
 Twitter bootstrap 12 grid convention: all spans under class .row or .row-fluid MUST add up to 12. All Global Blue customised CSS is in base.less file. 
 
 3. Image
-Generate the maxium size (as the number shown on the images) and then responsively adjust them according to different resolutions.
+Use the maximum size (as the number shown on the images) and then responsively adjust according to different resolutions.
 
 4. Javascrip
-Only use bootstrap library and dirty old hide/show trick to achieve everything. However, leave Javacript function structure in case needed.   
+Only use bootstrap library and hide/show trick to achieve current structure. 
+Javacript responding function structure is provided in case needed.   
