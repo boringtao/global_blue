@@ -9,3 +9,11 @@ Widgets
 2. Menu delete dividers
 3. Breadcrumb move into nav container
 4. Add link to clickable images and titles. 
+
+2013-05-05 log
+Fixed mistakes:
+1. change response.js to respond.js in index.html
+2. change response.js file name to respond.js. 
+3. *** change Rss widget class from span6 to span12. 
+4. ***** move Breadcrumb widget out of navBar container, because NavBar will be fixed on top on mobile devices whil Breadcrumb won't.
+5. add Timeline widget. 
