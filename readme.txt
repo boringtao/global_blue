@@ -16,4 +16,6 @@ Fixed mistakes:
 2. change response.js file name to respond.js. 
 3. *** change Rss widget class from span6 to span12. 
 4. ***** move Breadcrumb widget out of navBar container, because NavBar will be fixed on top on mobile devices whil Breadcrumb won't.
-5. add Timeline widget. 
+5. add links to Carousel widget. 
+6. add Timeline widget. 
+
