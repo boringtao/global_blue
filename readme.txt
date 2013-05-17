@@ -43,4 +43,18 @@ Widgets
 - Product picture overlay
 - Product order completion form overlay
 13. add Bottom list widget
- 
+
+2013－05－17
+1. Product ordering form widget
+- modal image size 
+- add Enlarge icon
+- modal form validation Javascript
+- modal form confirmation message
+2. Country modal widget cookie
+3. Language dropdown cookie
+4. Management profile widget
+- Image size 620x406
+- Add Job title
+- Position/Designation wrapped with <p> tag
+- body / description can be wrapped with <div tag
+
