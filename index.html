@@ -1166,7 +1166,7 @@
         }
 
         $('#lang li a').click(function(){
-          var siteURL = $(location).attr('href');
+          var siteURL = $(this).attr('href');
           $.cookie('globalblue', siteURL);
           var cookie = $.cookie('globalblue');
           console.log(cookie);
