@@ -58,3 +58,25 @@ Widgets
 - Position/Designation wrapped with <p> tag
 - body / description can be wrapped with <div tag
 
+2013-05-19
+1. add style.less file
+2. update base.less file
+3. add search button image: line 49
+4. add breadcrumb divider image: line 161/162
+5. total rewrite Contact & Support widget to add jQuery validation and Success message
+6. update Signup newsletter widget
+7. update Related contents widget
+8. update Carousel widget
+- *** no spec
+9. update Timeline widget: 
+- *** no spec
+- missing graphic element: the dotted line background through the years; the triangle indicator
+- *** coz the tab been pull right, the order of the tab needs to be reversed, line 289 ~ 293
+10. update Produce ordering form widget
+- missing enlarge icon
+11. update Country widget
+- *** no spec
+- missing graphic element: logo, backgaround
+11. add email and linkedin image: line 1118/1119
+12. add Tool widget image icons: line 905 ~ 912
+
