@@ -170,7 +170,7 @@
                   <a href="#"><img src="http://placehold.it/620x350" alt=""></a>
                 </div>
                 <div class="carousel-caption">
-                  <h1><a href="#">Title</a></h1>
+                  <h2><a href="#">Title</a></h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
                 </div>
               </div>
@@ -179,7 +179,7 @@
                   <a href="#"><img src="http://placehold.it/620x350" alt=""></a>
                 </div>
                 <div class="carousel-caption">
-                  <h1><a href="#">Title</a></h1>
+                  <h2><a href="#">Title</a></h2>
                   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
                 </div>
               </div>
@@ -530,8 +530,8 @@
               </section>
             </div>
             <div class="modal-body">
-              <div class="row-fluid">
-                <ul class="clear-fix selectList">
+              <div class="row-fluid country">
+                <ul class="clear-fix countryList">
                   <li><a href="#1">Country</a></li>
                   <li><a href="#2">Country</a></li>
                   <li><a href="#3">Country</a></li>
@@ -1138,6 +1138,24 @@
             window.location = $(this).find("option:selected").val();
           });
         });
+
+        // list country to select box 
+
+        $("<select />").appendTo('.country');
+        $("<option />", {
+           "selected": "selected",
+           "value"   : "",
+           "text"    : "Country"
+        }).appendTo(".country select");
+
+        $('.country a').each(function() {
+          var el = $(this);
+          $("<option />", {
+            "value"   : el.attr("href"),
+            "text"    : el.text()
+          }).appendTo(".country select");
+        });
+
         
       });
     </script>
