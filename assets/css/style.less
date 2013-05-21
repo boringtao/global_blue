@@ -269,6 +269,66 @@ header {
   }
 }
 
+.events {
+  h1, p.summary, .sub-header {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+  }
+  #country {
+    margin-top: 8px;
+  }
+}
+#eventsTab {
+  border-bottom: none;
+  > li.month {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    a {
+      background-color: #78B7E4;
+      border-radius: 50% 50% 50% 50%;
+      border-color: transparent;
+      color: #FFFFFF;
+      margin: 0 auto;
+      padding: 16px 0;
+      text-align: center;
+      width: 52px;
+    }
+    &.active a {
+      background-color: #293583;
+    }
+    &.empty a {
+      background-color: #cccccc;
+    }
+  }
+}
+#eventTabContent {
+  padding: 10px;
+  border: 1px dotted #ccc;
+  min-height: 500px;
+  p.summary {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+  }
+  .tab-pane {
+    li {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    
+    .eventDate {
+      color: #ccc;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    .eventDetals {
+      color: #666;
+    }
+  }
+
+}
+
 /* contact-support */
 .contact-support {
   h1 {
