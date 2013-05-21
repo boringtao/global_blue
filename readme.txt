@@ -80,3 +80,5 @@ Widgets
 11. add email and linkedin image: line 1118/1119
 12. add Tool widget image icons: line 905 ~ 912
 
+2013-05-21
+1. change CSS class name based on CMS requirement. 
