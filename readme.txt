@@ -82,3 +82,4 @@ Widgets
 
 2013-05-21
 1. change CSS class name based on CMS requirement. 
+2. add Events calendar widgets
