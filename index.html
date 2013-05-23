@@ -30,8 +30,6 @@
     <link rel="stylesheet/less" type="text/css" href="assets/css/style.less" />
     <script src="assets/js/less.js" type="text/javascript"></script>
     <script src="assets/js/modernizr.js"></script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "3227b903-1249-4172-ae4a-358b8b7e0a97", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
   </head>
 
   <body>
@@ -1022,8 +1020,7 @@
             <span><a href="#" rel="tooltip" data-toggle="tooltip" title="Bookmark"><img src="assets/img/icon-bookmark.png"></a></span>
             <span><a href="#" rel="tooltip" data-toggle="tooltip" title="Print"><img src="assets/img/icon-print.png"></a></span>
             <span><a href="#" rel="tooltip" data-toggle="tooltip" title="Email"><img src="assets/img/icon-email.png"></a></span>
-            <!-- need to embed the javascript within the head section -->
-            <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+            <span><a href="#" class="linkedin" rel="tooltip" data-toggle="tooltip" title="Linkedin"><img src="assets/img/icon-linkedin.png"></a></span>
             <span><a href="#"><img src="assets/img/icon-up.png"></a></span>
           </div><!--/.row-fluid -->
 
@@ -1166,8 +1163,7 @@
       <p class="pull-right">
         <span>Global Blue &copy; 2012 </span>
         <span><a href="#" rel="tooltip" data-toggle="tooltip" title="Email"><img src="assets/img/icon-email.png"></a></span>
-        <!-- need to embed the javascript within the head section -->
-        <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        <span><a href="http://www.linkedin.com/company/global-blue" rel="tooltip" data-toggle="tooltip" title="Linkedin"><img src="assets/img/icon-linkedin.png"></a></span>
       </p>
     </footer>
 
@@ -1177,6 +1173,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/jquery.popupwindow.js"></script>
     <script>
       $.validator.setDefaults({
         submitHandler: function() {$("a#validated").trigger("click");}
@@ -1198,6 +1195,14 @@
         //validate
         $("#productForm").validate();
         $("#contactSupportForm").validate();
+
+        $('a.linkedin').click(function(event) {
+          event.preventDefault();
+          $.popupWindow('http://google.com', {
+            width: 400,
+            height: 400
+          });
+        });
 
         //cookie
         
