@@ -95,4 +95,6 @@ Widgets
 I only been able to apply the class to the newly added or modified widgets, but they can be used anywhere. 
 
 2. Add Story 8, Story 10, Trailer, List, RSS, Why join us widgets
-3. Modify Four columns, Managerment profile widgets
+3. Modify Four columns, Managerment profile, Bottom widgets
+4. Modify Breadcrumb, Content widget CSS
+5. Modify Carousel mobile CSS
