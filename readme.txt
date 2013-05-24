@@ -83,3 +83,16 @@ Widgets
 2013-05-21
 1. change CSS class name based on CMS requirement. 
 2. add Events calendar widgets
+
+2013-05-22/1
+1. create general class: 
+.link-blue for all link having blue color
+.title-blue for all title having blue color
+.block-border-bottom: for block end with paragraph
+.block-border-top: fro block start with h tage
+.border-bottom: for block end with div
+.border-top: for block start with div
+I only been able to apply the class to the newly added or modified widgets, but they can be used anywhere. 
+
+2. Add Story 8, Story 10, Trailer, List, RSS, Why join us widgets
+3. Modify Four columns, Managerment profile widgets
