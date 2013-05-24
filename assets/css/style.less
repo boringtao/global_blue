@@ -30,26 +30,34 @@ h1, h2, h3, h4 {
     .borderBottom ();
   }
   .border-top {
-    padding-top: 15px;
-    margin-top: 15px;
-    .borderTop ();
+    h2, li {
+      padding-top: 15px;
+      margin-top: 15px;
+      .borderTop ();
+    }
   }
   .border-bottom {
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    .borderBottom ();
+    h2, li {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      .borderBottom ();
+    }
   }
   .list {
     font-size: 20px;
     font-weight: bold;
   }
-  a.link-blue {
-    color: #0088cc;
+  .list.link-blue {
+    a {
+      color: #0088cc;    
+    }
   }
   .title-blue {
-    color: #293583;
-    font-size: 16px;
-    margin: 0;
+    h2 {
+      color: #293583;
+      font-size: 16px;
+      margin: 0;
+    }
   }
   .rss {
     li {
