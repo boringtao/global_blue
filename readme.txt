@@ -98,3 +98,6 @@ I only been able to apply the class to the newly added or modified widgets, but 
 3. Modify Four columns, Managerment profile, Bottom widgets
 4. Modify Breadcrumb, Content widget CSS
 5. Modify Carousel mobile CSS
+
+2013-05-30
+1. update homepage.html, article-portrait.html, client-service.html, marketing-services.html, services.html, tax-free-shopping.html, visitors-magazine.html
