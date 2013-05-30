@@ -22,22 +22,40 @@ h1, h2, h3, h4 {
     }
   }
   .block-border-top {
+    margin-top: 15px;
     padding-top: 5px;
     .borderTop ();
   }
   .block-border-bottom {
     padding-bottom: 5px;
+    margin-bottom: 15px;
     .borderBottom ();
   }
-  .border-top {
-    h2, li {
+  .h2-border-top {
+    > h2 {
+      padding-top: 15px;
+      margin-top: 15px;
+      line-height: 1;
+      .borderTop ();
+    }
+  }
+  .li-border-top {
+    li {
       padding-top: 15px;
       margin-top: 15px;
       .borderTop ();
     }
   }
-  .border-bottom {
-    h2, li {
+  .h2-border-bottom {
+    > h2, li {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      line-height: 1;
+      .borderBottom ();
+    }
+  }
+  .li-border-bottom {
+    li {
       padding-bottom: 15px;
       margin-bottom: 15px;
       .borderBottom ();
@@ -47,8 +65,8 @@ h1, h2, h3, h4 {
     font-size: 20px;
     font-weight: bold;
   }
-  .articlelist.link-blue {
-    a {
+  .link-blue {
+    p a {
       color: #0088cc;    
     }
   }
@@ -63,6 +81,9 @@ h1, h2, h3, h4 {
     li {
       display: block;
       line-height: 1em;
+      border-bottom: 1px dotted #ccc;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
       span {
         min-height: 15px;
         line-height: 1em;
@@ -75,6 +96,14 @@ h1, h2, h3, h4 {
   }
 }
 
+.ad {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 15px;
+}
 div, p {
   color: #999;
   font-size: 12px;
@@ -562,7 +591,7 @@ header {
     margin: 0 -10px 15px;
   }
   input {
-    width: 83%;
+    width: 80%;
   }
   button {
     margin-left: -8px;
@@ -578,10 +607,6 @@ header {
     margin: 0;
     color: #293583;
   }
-}
-
-.sign-up {
-  border-bottom: 1px dotted #ccc;
 }
 
 /* related article */
@@ -778,6 +803,16 @@ footer {
   .carousel-indicators {
     margin-left: 45px;
   }
+  select {
+    width: 724px;
+  }
+  #bottom {
+    width: 724px;
+    padding: 0 22px;
+  }
+  .titleOnImageTeaser .position-absolute {
+    left: 52px;
+  }
 }
 
 /* Mobile  320 */
@@ -839,5 +874,17 @@ footer {
   }
   #countryModal.modal .modal-body ul {
     display: none;
+  }
+  #bottom {
+    width: 280px;
+    margin: 20px -20px;
+    [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+      float: left;
+      margin-left: 2.12766%;
+      width: 46.9362%;
+    }
+  }
+  .titleOnImageTeaser .position-absolute {
+    left: 0;
   }
 }
