@@ -101,3 +101,4 @@ I only been able to apply the class to the newly added or modified widgets, but 
 
 2013-05-30
 1. update homepage.html, article-portrait.html, client-service.html, marketing-services.html, services.html, tax-free-shopping.html, visitors-magazine.html
+2. rss.html, press-centre.html, services.html

@@ -361,6 +361,10 @@ header {
       background-color: #78B7E4;
       margin-bottom: 20px;
     }
+    ul {
+      background: url('../img/timeline-indicator.png') left 16px no-repeat;
+      padding-left: 17px;
+    }
     li {
       border: 1px dotted #ccc;
     }
@@ -382,6 +386,10 @@ header {
   > li.month {
     margin-bottom: 15px;
     margin-top: 15px;
+    width: 100%;
+    &.active {
+      background: url('../img/timeline-indicator.png') 73px 16px no-repeat;
+    }
     a {
       background-color: #78B7E4;
       border-radius: 50% 50% 50% 50%;
@@ -391,6 +399,7 @@ header {
       padding: 16px 0;
       text-align: center;
       width: 52px;
+      float: left;
     }
     &.active a {
       background-color: #293583;
@@ -401,6 +410,9 @@ header {
   }
 }
 #eventTabContent {
+  margin-left: -15px;
+}
+#eventTabContent .tab-pane {
   padding: 10px;
   border: 1px dotted #ccc;
   min-height: 500px;
@@ -409,7 +421,7 @@ header {
     margin-bottom: 15px;
     border-bottom: 1px dotted #ccc;
   }
-  .tab-pane {
+
     li {
       font-size: 14px;
       margin-bottom: 15px;
@@ -423,7 +435,7 @@ header {
     .eventDetals {
       color: #666;
     }
-  }
+
 
 }
 
@@ -532,6 +544,9 @@ header {
     line-height: 1em;
     margin: 0;
   }
+  .img-modal .close {
+    right: 17px;
+  }
   .btn {
     background-image: none;
     background-color: #293583;
@@ -565,6 +580,7 @@ header {
 
 /* country */
 #countryModal.modal {
+  background: url('../img/country-selector-background.jpg') top center no-repeat;
    .modal-header {
     height: 135px;
     border-bottom: 2px dotted #ccc;
@@ -573,6 +589,9 @@ header {
   }
   .modal-body ul li {
     font-size: 18px;
+  }
+  select {
+    display: none;
   }
 } 
 
@@ -893,8 +912,38 @@ footer {
       margin-left: 0;
     }
   }
+  .timeline #history ul {
+    background-image: none;
+    padding-left: 0;
+  }
+
+  #eventsTab {
+    > li.month {
+      width: auto;
+      margin: 5px;
+      display: inline-block;
+    &.active {
+      background-image: none;
+    }
+    }
+  }
+  #eventTabContent {
+    margin-left: 0;
+  }
+  #countryModal.modal {
+    select {
+      display: block;
+      width: 267px;
+    }
+  } 
 }
 
 .position-lower .titleOnImageTeaser .position-absolute {
     top: 70%;
+}
+.icon-zoom-in {
+  background-image: url('../img/form-enlarge.png');
+    background-position: 0 0;
+    height: 20px;
+    width: 20px;
 }
