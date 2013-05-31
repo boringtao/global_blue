@@ -36,7 +36,7 @@
 
     </head>
 
-    <body onload = "checkCookie(1)">
+    <body>
 	<!-- NAVBAR
   ================================================== -->
 
@@ -107,7 +107,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
                 <ul id="lang" class="dropdown-menu">
-                  <li><a href="#1">Country</a></li>
+                  <li><a href="http://apple.com">Country</a></li>
                   <li><a href="#2">Country</a></li>
                   <li><a href="#3">Country</a></li>
                   <li><a href="#4">Country</a></li>
@@ -207,54 +207,6 @@
         <!-- Main area, 8 spans
         ================================================== -->
         <div class="main span8">
-
-          <!-- Modal -->
-          <div id="countryModal" class="modal hide fade">
-            <div class="modal-header">
-              <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true"><img src="assets/img/icon-close.png"></button>
-              <section class="pull-left">
-                <img src="assets/img/logo-global-blue.png">                
-              </section>
-            </div>
-            <div class="modal-body">
-              <div class="row-fluid country">
-                <ul class="clear-fix countryList">
-                  <li><a onclick= "setCookie(19898,'http://www.google.com');">Country</a></li>
-                  <li><a href="#2">Country</a></li>
-                  <li><a href="#3">Country</a></li>
-                  <li><a href="#4">Country</a></li>
-                  <li><a href="#5">Country</a></li>
-                  <li><a href="#6">Country</a></li>
-                  <li><a href="#7">Country</a></li>
-                  <li><a href="#8">Country</a></li>
-                  <li><a href="#9">Country</a></li>
-                  <li><a href="#10">Country</a></li>
-                  <li><a href="#11">Country</a></li>
-                  <li><a href="#12">Country</a></li>
-                  <li><a href="#13">Country</a></li>
-                  <li><a href="#14">Country</a></li>
-                  <li><a href="#15">Country</a></li>
-                  <li><a href="#16">Country</a></li>
-                  <li><a href="#17">Country</a></li>
-                  <li><a href="#18">Country</a></li>
-                  <li><a href="#19">Country</a></li>
-                  <li><a href="#20">Country</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <div class="row-fluid">
-                <div class="span3">
-                  <h3>Cookies & Global link-blue</h3>
-                </div>
-                <div class="span9">
-                  <div>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- Carousel
           ================================================== -->
@@ -705,6 +657,62 @@
       </p>
     </footer>
 
+    <!-- Country modal widget-->
+    <h1>Country modal widget</h1>
+    <a id="countryModalLink" href="#countryModal" role="button" class="btn" data-toggle="modal">Launch country modal</a>
+     
+    <!-- Modal -->
+    <div id="countryModal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" data-dismiss="modal" aria-hidden="true"><img src="assets/img/icon-close.png"></button>
+        <span class="pull-right international-top"><a href="http://apple.com">Continue to International Site</a></span>
+        <section class="pull-left">
+          <img src="assets/img/logo-global-blue.png">                
+        </section>
+      </div>
+      <div class="modal-body">
+        <div class="row-fluid country">
+          <ul class="clear-fix countryList">
+            <li><a href="http://google.com">Country</a></li>
+            <li><a href="http://yahoo.com">Country</a></li>
+            <li><a href="#3">Country</a></li>
+            <li><a href="#4">Country</a></li>
+            <li><a href="#5">Country</a></li>
+            <li><a href="#6">Country</a></li>
+            <li><a href="#7">Country</a></li>
+            <li><a href="#8">Country</a></li>
+            <li><a href="#9">Country</a></li>
+            <li><a href="#10">Country</a></li>
+            <li><a href="#11">Country</a></li>
+            <li><a href="#12">Country</a></li>
+            <li><a href="#13">Country</a></li>
+            <li><a href="#14">Country</a></li>
+            <li><a href="#15">Country</a></li>
+            <li><a href="#16">Country</a></li>
+            <li><a href="#17">Country</a></li>
+            <li><a href="#18">Country</a></li>                 
+          </ul>
+        </div>
+        <div class="pull-right international-bottom">
+          <a href="http://apple.com">International</a>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row-fluid">
+          <div class="span3">
+            <h3>Cookies & Global link-blue</h3>
+          </div>
+          <div class="span9">
+            <div>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -744,32 +752,36 @@
 
         //cookie
         
-        /*if ($.cookie('globallink-blue')) {
+        if ($.cookie('globallink-blue')) {
+          var cookie = $.cookie('globallink-blue');
+          console.log(cookie);
+          
           window.location.href = $.cookie('globallink-blue');
         } else {
           $("a#countryModalLink").trigger("click");
-          $('#countryModal li').click(function(){
-            var siteURL = $(location).attr('href');
+          $("a#countryModalLink").trigger("click");
+          $('#countryModal li a').click(function(){
+            var siteURL = $(this).attr('href');
             $.cookie('globallink-blue', siteURL);
             var cookie = $.cookie('globallink-blue');
-            console.log(cookie);
+            console.log(siteURL);
+            return false;
           });
-}*/
+          $('.international-top a, .international-bottom a').click(function(){
+            var siteURL = $(this).attr('href');
+            $.cookie('globallink-blue', siteURL);
+            var cookie = $.cookie('globallink-blue');
+            console.log(siteURL);
+            return false;
+          });
+        }
 
-$('#lang li a').click(function(){
-  var siteURL = $(this).attr('href');
-  $.cookie('globallink-blue', siteURL);
-  var cookie = $.cookie('globallink-blue');
-  console.log(cookie);
-});
-
-        // $("a#countryModalLink").trigger("click");
-        // $('#countryModal li').click(function(){
-        //   var siteURL = $(location).attr('href');
-        //   $.cookie('globallink-blue', siteURL);
-        //   var cookie = $.cookie('globallink-blue');
-        //   console.log(cookie);
-        // });
+        $('#lang li a').click(function(){
+          var siteURL = $(this).attr('href');
+          $.cookie('globallink-blue', siteURL);
+          var cookie = $.cookie('globallink-blue');
+          console.log(cookie);
+        });
 
         // List switch to select box 
         $('.selectList').each(function(){
@@ -861,141 +873,5 @@ $('#lang li a').click(function(){
         windowState = 'large';      
       }
       </script>
-
-      <!--cookie modal-->
-      <script type="text/javascript">
-// Function to help set the expiration days of cookies
-
-function secondsInMilliseconds(numseconds)
-{
-   return numseconds * 1000;
-}
-
-function minutesInMilliseconds(numminutes)
-{
-  return secondsInMilliseconds(numminutes * 60);
-}
-
-function hoursInMilliseconds(numhours)
-{
-  return minutesInMilliseconds(numhours * 60);
-}
-
-function daysInMilliseconds(numdays)
-{
-  return hoursInMilliseconds(numdays * 24);
-}
-
-function yearsInMilliseconds(numyears)
-{
-  return daysInMilliseconds(numyears * 365);
-}
-
-
-// Function to get the cookie value if any stored
-
-function getCookieValue(key)
-{
-
-    currentcookie = document.cookie;
-    if (currentcookie.length > 0)
-    {
-        
-    firstidx = currentcookie.indexOf(key + "=");
-        if (firstidx != -1)
-        {
-            firstidx = firstidx + key.length + 1;
-            lastidx = currentcookie.indexOf(";",firstidx);
-            if (lastidx == -1)
-            {
-                lastidx = currentcookie.length;
-            }
-            return unescape(currentcookie.substring(firstidx, lastidx));
-        }
-    }
-    return 0;
-}
-
-
-// Function to set the cookie value 
-
-
-
-function setCookie(code,url_func)
-{
-
-  var simple_code = code;
-
-  if (simple_code == 198989)
-  {
-    var url = url_func.value;
-  }
-
-  else
-  {
-    var url = url_func;
-    simple_code = 198989;
-  }
-
-  if (url != "None")
-  {
-    var expiremilliseconds = daysInMilliseconds(100);
-    var currdate = new Date();
-    var expirationdate = new Date(currdate.getTime() + expiremilliseconds);
-  
-    document.cookie="value_code="
-               + simple_code
-               + ";expires=" + expirationdate.toGMTString();
-  
-    document.cookie="url="
-               + url
-               + ";expires=" + expirationdate.toGMTString();
-
-    window.location.href = url;
-
-  }
-
-
-}
-
-
-// Function to check the cookie value if set then open the appropriate links or else show the modal on load which differs for devices(mobiles/Desktop/laptop)
-
-
-function checkCookie(load)
-{
-
-  var value_code = getCookieValue("value_code");
-  var load_val = load;
-
-  if(value_code == 198989) 
-  {
-    
-    var a = document.createElement('a');
-    var linkText = document.createTextNode("Launch demo modal");
-    a.appendChild(linkText);
-    a.title = "Launch demo modal<";
-    a.role = "button";
-    a.className = "btn";
-    a.href = getCookieValue("url");
-    document.body.appendChild(a);
-
-
-    
-  }
-  else if(value_code != 198989 && load == 1)
-  {
-
-    $('#countryModal').modal('show');
-   
-  }
-
-
-}
-
-
-
-
-</script>    
     </body>
     </html>
