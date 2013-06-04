@@ -102,3 +102,27 @@ I only been able to apply the class to the newly added or modified widgets, but 
 2013-05-30
 1. update homepage.html, article-portrait.html, client-service.html, marketing-services.html, services.html, tax-free-shopping.html, visitors-magazine.html
 2. rss.html, press-centre.html, services.html
+
+2013-06-04
+Following the email order
+1. Homepage.html
+-move the space above the logo
+*** country selector
+-hide the country modal button
+-hide the bottom international link
+-resize the top international link box in mobile view
+-fix different length of country names *** the maximum width we can fit in for each country is 200px, longer than that, we have reconsider the font-size. 
+*** the tag line image from Joe
+2. form.retailerServicesForm
+-add the form element
+-change the related css
+3. add class confirmModal and orderModal. but cannot replace the ID confirmModal and orderModal, everytime we add a new form, need to create a new ID such as confirmModal1 and orderModal1 with class confirmModal and orderModal. This is how modal window been recognised by the button's href. 
+4. fixed the horizontal and vertical scroll bar. 
+*** set the max-height to 1000px, if exceed this, the scroll bar will still show, but should be long enough. 
+5. move the confirmModal 650px into only desktop media query. 
+6. pop-up image
+- tablet enlarge icon position coz the image smaller than box size
+- mobile showing image at center. 
+7. portrait article
+- desktop/tablet text wrap around image
+- mobile image center

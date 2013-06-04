@@ -151,7 +151,7 @@ textarea.error, input.error {
 }
 
 .profile-modal .modal-body, .order-modal .modal-body {
-  max-height: 520px;
+  max-height: 1000px;
 }
 
 /* Desktop */
@@ -312,6 +312,12 @@ textarea.error, input.error {
   }
 }
 
+@media only screen and (min-width:321px) and (max-width:768px) {
+  .enlarge {
+    right: 20px;
+  }
+}
+
 /* Mobile  320 */
 @media only screen and (max-width:320px) {
   input {
@@ -332,5 +338,9 @@ textarea.error, input.error {
         }
       }
     }
+  }
+  .product-ordering-form .img-modal {
+    margin-left: 0;
+    width: 300px;
   }
 }
