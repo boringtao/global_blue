@@ -671,7 +671,7 @@ $('#lang li a').click(function(){
         $('.selectList').each(function(){
           var selectID = $(this).attr('id');
 
-          $("<select />").appendTo("nav#" + selectID);
+          $("<select />").appendTo("nav#" + selectID).css({'width':'120px'});
 
           // Create default option
           $("<option />", {
