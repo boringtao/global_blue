@@ -1,0 +1,107 @@
+.carousel-control {
+  background: none repeat scroll 0 0 #fff;
+  border: 3px solid #999;
+  color: #000;
+  opacity: 1;
+  &:hover, &:focus {
+    color: #000;
+  }
+}
+.carousel-caption {
+  background-color: #fff;
+  opacity: 1;
+  h2 {
+    a {
+      color: #666; 
+    }
+  }
+  p {
+    color: #999;
+  }
+}
+@media only screen and (min-width:321px) {
+	.carousel img {
+	  width: 620px;
+	  height: auto;
+	}
+	.carousel-caption {
+	  left: 0;
+	  right: auto;
+	  margin-top: -65px;
+	  padding: 15px 15px 15px 80px;
+	  top: 50%;
+	  width: 400px;
+	  height: 100px;
+	  background-color: #fff;
+	  opacity: 1;
+	  h2 {
+	    margin-top: 0;
+	    a {
+	      color: #666; 
+	    }
+	  }
+	  p {
+	    color: #999;
+	  }
+	}
+	.carousel-indicators {
+	  top: auto;
+	  right: auto;
+	  bottom: 15px;
+	  left: 15px;
+	  li {
+	    background-color: transparent;
+	    display: block;
+	    float: left;
+	    height: 10px;
+	    margin-left: 5px;
+	    width: 10px;
+	    text-indent: 0;
+	    color: #fff;
+	    border-left: 1px solid #fff;
+	    border-radius: 0;
+	    line-height: 9px;
+	    padding-left: 10px;
+	  }
+	  li:first-child {
+	    border: none;
+	  }
+	  .active {
+	    background-color: transparent;
+	    text-decoration: underline;
+	  }
+	}
+	.carousel-control {
+		top: 50%;
+	}
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+	.carousel-control.left {
+    left: 60px;
+  }
+  .carousel-control.right {
+    right: 60px;
+  }
+  .carousel-indicators {
+    margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width:321px) {
+	.carousel-control {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    top: 28%;
+  }
+  .carousel-control.left {
+    left: 10px;
+  }
+  .carousel-control.right {
+    right: 10px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}

@@ -29,6 +29,7 @@
       <link href="assets/css/bootstrap.css" rel="stylesheet">
       <link rel="stylesheet/less" type="text/css" href="assets/css/base.less" />
       <link rel="stylesheet/less" type="text/css" href="assets/css/style.less" />
+      
       <script src="assets/js/less.js" type="text/javascript"></script>
       <script src="assets/js/modernizr.js"></script>
 
@@ -549,12 +550,10 @@
                 <li><a href="#18">Country</a></li>                 
               </ul>
             </div>
-            <div class="pull-right international-bottom">
+            <div class="international-bottom">
               <a href="http://apple.com">International</a>
             </div>
-          </div>
-          <div class="modal-footer">
-            <div class="row-fluid">
+            <div class="cookie-text block-border-top row-fluid">
               <div class="span3">
                 <h3>Cookies & Global link-blue</h3>
               </div>
@@ -812,7 +811,7 @@
 
         // list country to select box 
 
-        $("<select />").appendTo('.country');
+        $("<select />").appendTo('.country').css({'width':'250px'});
         $("<option />", {
          "selected": "selected",
          "value"   : "",

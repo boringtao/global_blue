@@ -23,6 +23,9 @@ header {
   display: none;
 }
 
+.modal-body {
+    max-height: 100px;
+}
 
 /* CUSTOMIZATION
 -------------------------------------------------- */
@@ -83,26 +86,6 @@ header {
   }
 }
 
-#countryModal.modal {
-  .modal-header {
-    height: 150px;
-  }
-  .modal-body {
-    text-align: center;
-    ul {
-      margin-left: 0;
-      list-style: none;
-      li {
-        display: inline;
-        padding: 10px 70px;
-      }
-    }
-  }
-  .modal-footer {
-    text-align: left;
-  }
-}
-
 .position-wrap {
   position: relative;
 }
@@ -152,10 +135,7 @@ textarea.error, input.error {
 
 /* Desktop */
 @media only screen and (min-width:769px) {
-  .carousel img {
-    width: 620px;
-    height: auto;
-  }
+  
   .main {
     .span6 img {
       width: 303px;
@@ -234,12 +214,7 @@ textarea.error, input.error {
 }
 
 
-@media only screen and (min-width:601px) and (max-width:768px) {
-  .carousel-caption {
-    left: 52px;
-    width: 590px;
-  }
-}
+
 
 /* Mobile  480 */
 @media only screen and (max-width:480px) {
@@ -326,15 +301,7 @@ textarea.error, input.error {
     width: 100%;
     margin-left: 0;
   }
-  #countryModal.modal {
-    .modal-body {
-      ul {
-        li {
-          padding: 10px 20px;
-        }
-      }
-    }
-  }
+  
   .product-ordering-form .img-modal {
     margin-left: 0;
     width: 300px;

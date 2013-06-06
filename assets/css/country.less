@@ -1,0 +1,54 @@
+/* country */
+#countryModalLink {
+  /*display: none;*/
+}
+
+#countryModal.modal {
+  background: url('../img/country-selector-background.jpg') top center repeat-y;
+   .modal-header {
+    height: 145px;
+    border-bottom: 2px dotted #ccc;
+    padding: 0;
+    margin: 0 15px 9px;
+  }
+  .modal-body {
+    ul {
+      margin: 0 30px;
+      list-style: none;
+      li {
+        display: inline;
+        font-size: 18px;
+    		display: inline-block;
+    		width: 200px;
+    		padding: 10px 0;
+      }
+    }
+  }
+  .modal-footer {
+    text-align: left;
+  }
+  select {
+    display: none;
+  }
+  .close {
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+  .cookie-text {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+	#countryModal.modal .modal-body ul {
+    display: none;
+  }
+  #countryModal.modal {
+    select {
+      display: block;
+      width: 250px;
+    }
+  }
+}

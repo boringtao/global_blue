@@ -193,64 +193,7 @@ header {
   }
 }
 
-/* carousel */
-.carousel-control {
-  background: none repeat scroll 0 0 #fff;
-  border: 3px solid #999;
-  color: #000;
-  opacity: 1;
-  top: 50%;
-  &:hover, &:focus {
-    color: #000;
-  }
-}
-.carousel-caption {
-  left: 0;
-  right: auto;
-  margin-top: -65px;
-  padding: 15px 15px 15px 80px;
-  top: 50%;
-  width: 400px;
-  height: 100px;
-  background-color: #fff;
-  opacity: 1;
-  h2 {
-    margin-top: 0;
-    a {
-      color: #666; 
-    }
-  }
-  p {
-    color: #999;
-  }
-}
-.carousel-indicators {
-  top: auto;
-  right: auto;
-  bottom: 15px;
-  left: 15px;
-  li {
-    background-color: transparent;
-    display: block;
-    float: left;
-    height: 10px;
-    margin-left: 5px;
-    width: 10px;
-    text-indent: 0;
-    color: #fff;
-    border-left: 1px solid #fff;
-    border-radius: 0;
-    line-height: 9px;
-    padding-left: 10px;
-  }
-  li:first-child {
-    border: none;
-  }
-  .active {
-    background-color: transparent;
-    text-decoration: underline;
-  }
-}
+
 /* trailer */
 .trailer {
   h2 {
@@ -548,7 +491,7 @@ header {
   .btn {
     background-image: none;
     background-color: #293583;
-    padding: 4px 35px;
+    padding: 4px 20px;
     border-radius: 0;
     color: #fff;
     text-shadow: none;
@@ -576,31 +519,8 @@ header {
   }
 }
 
-/* country */
-#countryModalLink {
-  display: none;
-}
-#countryModal.modal {
-  background: url('../img/country-selector-background.jpg') top center no-repeat;
-   .modal-header {
-    height: 145px;
-    border-bottom: 2px dotted #ccc;
-    padding: 0;
-    margin: 0 15px 9px;
-  }
-  .modal-body ul li {
-    font-size: 18px;
-    display: inline-block;
-    width: 200px;
-    padding: 10px 0;
-  }
-  select {
-    display: none;
-  }
-  .close {
-    margin-top: 13px;
-  }
-} 
+
+
 
 /* sign up */
 .news-letter {
@@ -717,6 +637,7 @@ header {
   margin-right: 20px;
   margin-top: -10px;
   text-transform: uppercase;
+  text-align: right;
   a {
     color: #0088cc;   
   }
@@ -866,15 +787,7 @@ footer {
 
   }
 
-  .carousel-control.left {
-    left: 60px;
-  }
-  .carousel-control.right {
-    right: 60px;
-  }
-  .carousel-indicators {
-    margin-left: 45px;
-  }
+  
   select {
     width: 724px;
   }
@@ -909,21 +822,7 @@ footer {
       border-left: none;
     }
   }
-  .carousel-control {
-    width: 30px;
-    height: 30px;
-    line-height: 20px;
-    top: 28%;
-  }
-  .carousel-control.left {
-    left: 10px;
-  }
-  .carousel-control.right {
-    right: 10px;
-  }
-  .carousel-indicators {
-    display: none;
-  }
+  
   /* footer */
   footer {
     .pull-right {
@@ -937,15 +836,7 @@ footer {
     margin-left: 0!important;
     margin-top: 15px!important;
   }
-  .carousel-caption {
-    left: 0!important;
-    padding-left: 0!important;
-    margin-top: 0!important;
-    width: auto!important;
-  }
-  #countryModal.modal .modal-body ul {
-    display: none;
-  }
+  
   #bottom {
     margin: 20px -20px;
     [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
@@ -981,15 +872,10 @@ footer {
   #eventTabContent {
     margin-left: 0;
   }
-  #countryModal.modal {
-    select {
-      display: block;
-      width: 267px;
-    }
-  }
+  
 
   .international-top {
-    width: 106px
+    width: 80px;
   }
   .international-bottom {
     display: none;
@@ -1002,6 +888,174 @@ footer {
       text-align: center;
     }
   }
+  .orderModal {
+    .modal-body {
+        max-height: 100px;
+    }
+  }
   
 }
 
+/* country */
+#countryModalLink {
+  display: none;
+}
+
+#countryModal.modal {
+  background: url('../img/country-selector-background.jpg') top center repeat-y;
+   .modal-header {
+    height: 145px;
+    border-bottom: 2px dotted #ccc;
+    padding: 0;
+    margin: 0 15px 9px;
+  }
+  .modal-body {
+    ul {
+      margin: 0 30px;
+      list-style: none;
+      li {
+        display: inline;
+        font-size: 18px;
+        display: inline-block;
+        width: 200px;
+        padding: 10px 0;
+      }
+    }
+  }
+  .modal-footer {
+    text-align: left;
+  }
+  select {
+    display: none;
+  }
+  .close {
+    margin-top: 13px;
+  }
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+  .cookie-text {
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width:320px) {
+  #countryModal.modal .modal-body ul {
+    display: none;
+  }
+  #countryModal.modal {
+    select {
+      display: block;
+      width: 250px;
+    }
+  }
+}
+
+/* carousel */
+.carousel-control {
+  background: none repeat scroll 0 0 #fff;
+  border: 3px solid #999;
+  color: #000;
+  opacity: 1;
+  &:hover, &:focus {
+    color: #000;
+  }
+}
+.carousel-caption {
+  background-color: #fff;
+  opacity: 1;
+  h2 {
+    a {
+      color: #666; 
+    }
+  }
+  p {
+    color: #999;
+  }
+}
+@media only screen and (min-width:321px) {
+  .carousel img {
+    width: 620px;
+    height: auto;
+  }
+  .carousel-caption {
+    left: 0;
+    right: auto;
+    margin-top: -65px;
+    padding: 15px 15px 15px 80px;
+    top: 50%;
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    opacity: 1;
+    h2 {
+      margin-top: 0;
+      a {
+        color: #666; 
+      }
+    }
+    p {
+      color: #999;
+    }
+  }
+  .carousel-indicators {
+    top: auto;
+    right: auto;
+    bottom: 15px;
+    left: 15px;
+    li {
+      background-color: transparent;
+      display: block;
+      float: left;
+      height: 10px;
+      margin-left: 5px;
+      width: 10px;
+      text-indent: 0;
+      color: #fff;
+      border-left: 1px solid #fff;
+      border-radius: 0;
+      line-height: 9px;
+      padding-left: 10px;
+    }
+    li:first-child {
+      border: none;
+    }
+    .active {
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  }
+  .carousel-control {
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+  .carousel-control.left {
+    left: 60px;
+  }
+  .carousel-control.right {
+    right: 60px;
+  }
+  .carousel-indicators {
+    margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width:321px) {
+  .carousel-control {
+    width: 30px;
+    height: 30px;
+    line-height: 20px;
+    top: 28%;
+  }
+  .carousel-control.left {
+    left: 10px;
+  }
+  .carousel-control.right {
+    right: 10px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+}

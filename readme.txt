@@ -126,3 +126,17 @@ Following the email order
 7. portrait article
 - desktop/tablet text wrap around image
 - mobile image center
+
+2013-06-05
+Country Selector
+1. the semi-transparent is caused by the background image not long enough, i made it repeat-y, it is ok now. 
+2. now it is aligned left
+3. it is because the word "continue to international site" is too long, I fix it as 80px. it is ok now.
+4. I need to know how many inline items we have to set the item width, currently is 200px. If it is 3 items inline, it should be 800px/3, if it is 5, it is 800/5...etc
+
+I changed the html structure of the country modal footer because just found out on mobile, the modal footer can be scrolled by fingers, so I moved the "Cookie & Global Blue" text into modal body and give them a class: cookie-text and block-border-top. 
+
+
+Product Ordering Page:
+In order to show the whole box on various screens, I fixed the max-height of modal body window to 150px. I moved the submit button to  modal footer then the user can always see the button. 
+The vertical scroll will disappear when on mobile and finger can scroll the modal body. 
